@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/sameer-del/react-portfolio.git/static/css/main.5a7f5b04.css",
+    "main.js": "/sameer-del/react-portfolio.git/static/js/main.52360606.js",
+    "static/media/about-img-removebg.png": "/sameer-del/react-portfolio.git/static/media/about-img-removebg.7806aad50d0feba03fa3.png",
+    "static/media/remove-home-page.png": "/sameer-del/react-portfolio.git/static/media/remove-home-page.94ce09e67dfb7827d75c.png",
+    "static/media/bg.jpeg": "/sameer-del/react-portfolio.git/static/media/bg.1a97868b8d7bffa37e83.jpeg",
+    "static/media/Aquire-BW0ox.otf": "/sameer-del/react-portfolio.git/static/media/Aquire-BW0ox.a37a828dd20a35dc68d2.otf",
+    "index.html": "/sameer-del/react-portfolio.git/index.html",
+    "main.5a7f5b04.css.map": "/sameer-del/react-portfolio.git/static/css/main.5a7f5b04.css.map",
+    "main.52360606.js.map": "/sameer-del/react-portfolio.git/static/js/main.52360606.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5a7f5b04.css",
+    "static/js/main.52360606.js"
+  ]
+}
