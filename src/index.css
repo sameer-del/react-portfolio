@@ -1,13 +1,84 @@
-body {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: heading;
+  src: url(../src/assets/skill/Aquire-BW0ox.otf);
+}
+body {
+  background-color: #1e0b38;
+  background-image: url("../public/bg.jpeg");
+  background-image: cover;
+  background-position: cover;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.btn {
+  background: linear-gradient(
+    92.23deg,
+    #ff56f6 21.43%,
+    #b936ee 50.63%,
+    #3bace2 100%,
+    #406aff 117.04%
+  );
+  box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
+}
+h1 {
+  font-family: heading;
+}
+
+.btn:hover {
+  background: linear-gradient(
+    92.23deg,
+    #406aff 21.43%,
+    #3bace2 50.63%,
+    #b936ee 100%,
+    #ff56f6 117.04%
+  );
+}
+
+.gradient,
+.active {
+  background: linear-gradient(
+    92.23deg,
+    #406aff 21.43%,
+    #3bace2 50.63%,
+    #b936ee 100%,
+    #ff56f6 117.04%
+  );
+}
+
+.active {
+  color: #fff;
+  padding: 1rem;
+  border-radius: 100%;
+}
+.svg {
+  box-shadow: #1e0b38 2px 2px;
+}
+#education {
+  background-image: url("../public/bg.jpeg");
+  background-image: cover;
+  background-position: cover;
+}
+.image img {
+  animation: anime 3s ease infinite alternate;
+}
+
+@keyframes anime {
+  to {
+    transform: translateY(-10px);
+  }
+}
+.map {
+  animation: map 2s ease infinite alternate;
+}
+@keyframes map {
+  to {
+    transform: translateY(-20px);
+  }
 }
