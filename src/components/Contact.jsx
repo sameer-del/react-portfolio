@@ -1,6 +1,7 @@
-import Map from "./Map";
+
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import phone from "../assets/contact-png.png";
 
 const Contact = () => {
   const form = useRef();
@@ -38,19 +39,19 @@ const Contact = () => {
             className="flex flex-col gap-[20px] justify-center  h-[450px] border-none lg:w-[500px] p-4"
           >
             <input
-              className="p-[16px] rounded-lg "
+              className="p-[16px] rounded-lg text-accent font-heading "
               type="text"
               name="user_name"
               placeholder="Name"
             />
             <input
-              className="p-[16px] rounded-lg"
+              className="p-[16px] rounded-lg  text-accent font-heading"
               type="email"
               name="user_email"
               placeholder="Email"
             />
             <textarea
-              className="p-[20px] rounded-lg"
+              className="p-[20px] rounded-lg  text-accent font-heading"
               name="message"
               id=""
               placeholder="Send me a message"
@@ -66,7 +67,7 @@ const Contact = () => {
           </form>
         </div>
         <div className="map flex-1">
-          <Map />
+        <img className="w-[500px] p-2" src={phone} alt="" />
         </div>
       </div>
     </section>

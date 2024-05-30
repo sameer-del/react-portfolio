@@ -57,7 +57,7 @@ const About = () => {
             transition={{ duration: 0.8, delay: 0.8 }}
             className=" text-white text-[22px] font-heading lg:text-[32px] lg:text-start"
           >
-            student
+            fresher
           </motion.h3>
           <motion.p
             ref={ref}
@@ -67,33 +67,28 @@ const About = () => {
             transition={{ duration: 0.8, delay: 0.9 }}
             className=" font-primary text-cyan-50 py-2  text-[18px]  lg:max-w-[80%] "
           >
-            The web is my canvas, and coding is my paintbrush. I find joy in the
-            process of transforming designs into dynamic and user-friendly
-            interfaces. My journey in web development is not just a pursuit of
-            technical excellence; it's an exploration of the ever-evolving
-            landscape where creativity meets code. As a relentless learner, I
-            embrace challenges as opportunities to grow. In the fast-paced realm
-            of technology
+            As a motivated and enthusiastic individual, I am committed to continuous learning and professional growth. My portfolio showcases a range of projects, from dynamic web applications to responsive user interfaces, reflecting my dedication to creating efficient and engaging digital experiences.
           </motion.p>
 
           <div className="count grid grid-cols-2 gap-3 py-4  lg:grid lg:grid-cols-3 lg:mt-6 lg:gap-0 ">
             <div className="flex flex-col justify-center items-center  btn    rounded-md  h-[80px] uppercase text-[13px] lg:w-[150px] ">
-              <span className="text-[25px] tracking-[2px] ">
-                {inView ? <CountUp start={20} end={3} duration={5} /> : null}
+              <span className="text-[25px] tracking-[2px] font-primary  font-bold ">
+                {/* {inView ? <CountUp start={20} end={3} duration={5} /> : null} */}
+                BCA
               </span>
-              year of studying
+              
             </div>
             <div className="flex flex-col justify-center items-center btn   rounded-md h-[80px] uppercase text-[13px] lg:w-[150px]">
               <span className="text-[25px] tracking-[2px]">
-                {inView ? <CountUp start={0} end={15} duration={5} /> : null}
+                {inView ? <CountUp start={0} end={85} duration={5} /> : null}%
               </span>
-              number of projects
+              12th percentage
             </div>
             <div className="flex flex-col justify-center items-center btn   rounded-md col-span-2 h-[80px] uppercase text-[13px] lg:col-span-1 lg:w-[150px]">
               <span className="text-[25px] tracking-[2px]">
-                {inView ? <CountUp start={0} end={13} duration={5} /> : null}
+                {inView ? <CountUp start={0} end={83} duration={5} /> : null}%
               </span>
-              number of completed
+              10th percentage
             </div>
           </div>
         </div>

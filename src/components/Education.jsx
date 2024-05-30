@@ -2,6 +2,9 @@ import React from "react";
 import css from "../assets/skill/css.png";
 import html from "../assets/skill/html.png";
 import figma from "../assets/skill/figma.png";
+import python from "../assets/skill/python.png";
+import tailwind from "../assets/skill/tailwind.png";
+import javascript from "../assets/skill/javascript.png";
 
 const Education = () => {
   return (
@@ -27,15 +30,15 @@ const Education = () => {
         </div>
         <div className=" w-[150px] rounded-[45px] lg:w-[350px] lg:h-[180px] text-white border flex flex-col items-center lg:rounded-[15px] btn ">
           <h1 className="text-[20px] p-2 ">javascript</h1>
-          <img className="w-[100px] p-2" src="javascript.png" alt="" />
+          <img className="w-[100px] p-2" src={javascript} alt="" />
         </div>
         <div className=" w-[150px] rounded-[45px] lg:w-[350px] lg:h-[180px]  text-white border flex flex-col items-center lg:rounded-[15px] btn ">
           <h1 className="text-[20px] p-2 ">python</h1>
-          <img className="w-[100px] p-2" src="python.png" alt="" />
+          <img className="w-[100px] p-2" src={python} alt="" />
         </div>
         <div className=" w-[150px] rounded-[45px] lg:w-[350px] lg:h-[180px]  text-white border flex flex-col items-center lg:rounded-[15px]  btn">
           <h1 className="text-[20px] p-2 ">tailwind css</h1>
-          <img className="w-[100px] p-2" src="tailwind.png" alt="" />
+          <img className="w-[100px] p-2" src={tailwind} alt="" />
         </div>
       </div>
     </section>

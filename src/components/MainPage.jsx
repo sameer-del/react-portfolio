@@ -4,6 +4,7 @@ import photo from "../assets/remove-home-page.png";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
+
 const MainPage = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -29,18 +30,18 @@ const MainPage = () => {
             className="text "
           >
             <div className="flex-1 text-center font-secondary lg:text-left">
-              <h1 className="text-[50px] font-bold leading-[0.8] lg:text-[90px] font-secondary">
+              <h1 className="text-[50px] font-bold leading-[0.8] lg:text-[80px] font-secondary">
                 Sameer <span>Ahamed</span>
               </h1>
-              <div className="mt-6 text-[32px] lg:text-[50px] font-secondary font-semibold uppercase leading-[1]">
+              <div className="mt-6 text-[32px] lg:text-[40px] font-secondary font-semibold uppercase leading-[1]">
                 <span className=" mr-4">Iam a</span>
                 <TypeAnimation
                   sequence={[
                     "developer",
                     2000,
-                    "Designer...",
+                    "learner...",
                     2000,
-                    "student..",
+                    "fresher..",
                     2000,
                   ]}
                   speed={30}
@@ -49,17 +50,16 @@ const MainPage = () => {
                   repeat={Infinity}
                 />
               </div>
-              <p className=" font-bold text-[19px] mt-6 max-w-[90%]  mx-auto lg:max-w-[60%] capitalize lg:mx-0 lg:text-start">
-                I'm sameer,a dedicated college student on a mission to dive deep
-                into the world of web development.my skills as a Frontend
-                Developer.{" "}
+              <p className=" font-bold text-[18px] mt-6 max-w-[90%]  mx-auto lg:max-w-[60%] capitalize lg:mx-0 lg:text-start">
+              Hello, I'm Sameer, a passionate web developer with a knack for creating engaging and dynamic digital experiences.find a collection of my work, showcasing my skills in HTML, CSS, JavaScript, and React.{" "}
               </p>
               <div className="py-[20px] w-max-lg">
                 <button className="btn font-heading  rounded-xl px-6 py-1 text-white font-bold pb-[8px] text-[18px]">
                   {" "}
-                  <a href="Resume-sam.png" target="blank" download={true}>
-                    resume
-                  </a>
+                  
+                   <a href={`${process.env.PUBLIC_URL}/sameer_resume.pdf`} target="_blank" rel="noopener noreferrer">
+      <button>Resume</button>
+    </a>
                 </button>
               </div>
 
@@ -82,7 +82,7 @@ const MainPage = () => {
               </div>
             </div>
           </motion.div>
-          <div>
+          <div className=" lg:w-[70%]">
             <motion.img
               ref={ref}
               initial={{ x: -50, opacity: 0 }}
@@ -90,7 +90,7 @@ const MainPage = () => {
               variants={slideInVariants}
               transition={{ duration: 1, delay: 0.5 }}
               src={photo}
-              alt=""
+              className="img-holder"
             />
           </div>
         </div>

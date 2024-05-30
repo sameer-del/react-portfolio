@@ -6,6 +6,8 @@ import Header from './components/Header';
 import MainPage from './components/MainPage';
 import Navbar from './components/Navbar';
 import Contact from './components/Contact';
+import Portfolio from './components/Portfolio';
+
 
 
 function App() {
@@ -16,6 +18,7 @@ function App() {
      <MainPage/>
      <About/>
      <Education/>
+     <Portfolio/>
      <Contact/>
     </div>
   );
